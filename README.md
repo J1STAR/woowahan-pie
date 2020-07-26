@@ -4,7 +4,7 @@
   <img src="https://user-images.githubusercontent.com/19797697/88479003-4e55c580-cf87-11ea-86d6-5da8ff39a025.gif" width="1000" />
 </p>
 
-<h3 align="center">A simple Pie Chart Generator</h3>
+<h3 align="center">A simple Pie Chart generator</h3>
 
 <p align="center">
   <a href="https://github.com/woowa-techcamp-2020/woowahan-pie/blob/master/LICENSE">
