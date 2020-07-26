@@ -1,16 +1,18 @@
 {
   "name": "pie-chart",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "microbundle watch",
+    "build": "microbundle -f es --sourcemap false"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^1.12.4",
+    "microbundle": "^0.12.3",
     "typescript": "^3.9.7"
   }
 }
