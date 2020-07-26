@@ -11,8 +11,6 @@
 
 ---
 
-## Installation
-
 ```zsh
 > npm install woowahan-pie
 ```
@@ -33,17 +31,13 @@ const pie = Pie({
 })
 ```
 
----
-
-## API
-
 ### `Pie(PieOptions)`
 
 The **Pie** function accepts pie options then returns a pie instance.
 
-### Options
+## Options
 
-**`target`**
+### `target`
 
 A target element for a pie chart to be mounted. You can just give a **selector string**.
 
@@ -63,7 +57,29 @@ Pie({
 })
 ```
 
-**`segments`**
+---
+
+### `size?`
+
+(Optional) The size of the pie. Any valid CSS size properties like `px`, `em`, `rem`, `%` are available including just a number which converts into pixels.
+
+```js
+Pie({
+  size: '400px',
+})
+
+Pie({
+  size: '10vw',
+})
+
+Pie({
+  size: 200, // Same as '200px'
+})
+```
+
+---
+
+### `segments`
 
 An array of pie segments defined by some segment options.
 
@@ -75,7 +91,7 @@ An array of pie segments defined by some segment options.
 
 ---
 
-## ToDo
+## To Do
 
 - [x] Custom size
 - [ ] Display legend on hover (add an option)
