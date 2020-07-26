@@ -7,10 +7,17 @@ style.textContent = `
   width: var(--size);
   height: var(--size);
   position: relative;
+  border-radius: 9999px;
+  transition: box-shadow 500ms ease;
+}
+
+.pie.ready {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
 .pie .legend-helper {
   position: absolute;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   transform-origin: 0% 50%;
@@ -25,7 +32,6 @@ style.textContent = `
   padding: 0.3em 0.5em;
   border-radius: 0.2em;
   color: #404040;
-  z-index: 9999;
   opacity: 0;
   transform: translateX(-50%) translateY(-1em) rotate(calc(var(--degree, 0) * -1deg));
   transition: transform 500ms ease, opacity 500ms ease;
