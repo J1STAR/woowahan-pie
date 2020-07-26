@@ -6,6 +6,15 @@
 
 <h3 align="center">A simple Pie Chart Generator</h3>
 
+<p align="center">
+  <a href="https://github.com/woowa-techcamp-2020/woowahan-pie/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/woowa-techcamp-2020/woowahan-pie?color=13c1a9" />
+  </a>
+  <a href="https://github.com/woowa-techcamp-2020/woowahan-pie/releases">
+    <img src="https://img.shields.io/github/v/release/woowa-techcamp-2020/woowahan-pie?include_prereleases&sort=semver&label=version&color=05a790" />
+  </a>
+</p>
+
 <p align="center"><b>Woowahan Pie</b> helps you easily create a simple yet elegant pie chart just in a second.</p>
 <p align="center">This library aims to intentionally leverage the power of CSS and DOM API provided by the browsers natively.</p>
 
@@ -14,6 +23,16 @@
 ```zsh
 > npm install woowahan-pie
 ```
+
+or
+
+```zsh
+> yarn add woowahan-pie
+```
+
+> UMD module will be shipped in the next major version
+
+---
 
 ### Usage (example above)
 
@@ -57,8 +76,6 @@ Pie({
 })
 ```
 
----
-
 ### `size?`
 
 (Optional) The size of the pie. Any valid CSS size properties like `px`, `em`, `rem`, `%` are available including just a number which converts into pixels.
@@ -77,8 +94,6 @@ Pie({
 })
 ```
 
----
-
 ### `segments`
 
 An array of pie segments defined by some segment options.
@@ -94,6 +109,7 @@ An array of pie segments defined by some segment options.
 ## To Do
 
 - [x] Custom size
+- [ ] UMD module
 - [ ] Display legend on hover (add an option)
 
 ## License
