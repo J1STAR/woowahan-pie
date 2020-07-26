@@ -11,7 +11,7 @@
     "clear": "rimraf lib/*",
     "clear:test": "rimraf test/lib/*",
     "dev": "npm run clear:test && microbundle watch -f modern --compress false -o test/lib/index.js",
-    "build": "npm run clear && microbundle -f modern --sourcemap false"
+    "build": "npm run clear && microbundle -f modern,umd --sourcemap false"
   },
   "keywords": [],
   "author": "",
