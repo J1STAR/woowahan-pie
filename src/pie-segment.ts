@@ -20,6 +20,9 @@ export class PieSegment {
   constructor(options: PieSegmentOptions) {
     const { offset, percent, color, legend } = options
 
+    this.offset = offset
+    this.percent = percent
+
     this.createSegmentElm(legend)
     this.setOffset(offset)
     this.setPercent(percent)
@@ -43,7 +46,7 @@ ${
   legend &&
   `
 <div class="legend-helper">
-  <label class="legend">${legend}</label>
+  <label class="legend">${legend.replace('[%]', `${this.percent}%`)}</label>
 </div>
 `
 }
