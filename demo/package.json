@@ -1,0 +1,12 @@
+{
+  "name": "demo",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "woowahan-pie": "^1.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
