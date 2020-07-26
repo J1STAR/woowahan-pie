@@ -3,6 +3,11 @@ import { style } from './style'
 
 type PieOptions = {
   target: string | HTMLElement
+  /**
+   * Any valid CSS size property
+   * @default '300px'
+   */
+  size?: string | number
   segments: { percent: number; color?: string; legend?: string }[]
 }
 
@@ -12,7 +17,7 @@ class PieInstance {
   private pieSegments: PieSegment[] = []
 
   constructor(options: PieOptions) {
-    const { target, segments } = options
+    const { size, target, segments } = options
 
     this.targetElm =
       typeof target === 'string'
@@ -51,6 +56,16 @@ class PieInstance {
     }
 
     this.pieElm = document.createElement('div')
+
+    if (size) {
+      let cssSize = size
+
+      if (typeof size === 'number') {
+        cssSize = size + 'px'
+      }
+
+      this.pieElm.style.setProperty('--size', cssSize as string)
+    }
 
     this.pieElm.className = 'pie'
 
