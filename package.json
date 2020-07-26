@@ -1,7 +1,7 @@
 {
   "name": "woowahan-pie",
-  "version": "1.0.0",
-  "description": "A simple Pie Chart library implemented with CSS and Shadow DOM",
+  "version": "1.0.1",
+  "description": "A simple Pie Chart Generator implemented with CSS and Shadow DOM",
   "source": "src/index.ts",
   "main": "lib/index.js",
   "esmodule": "lib/index.js",
@@ -13,9 +13,8 @@
     "dev": "npm run clear:test && microbundle watch -f modern --compress false -o test/lib/index.js",
     "build": "npm run clear && microbundle -f modern,umd --sourcemap false"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "jhaemin",
+  "license": "MIT",
   "devDependencies": {
     "microbundle": "^0.12.3",
     "rimraf": "^3.0.2",
