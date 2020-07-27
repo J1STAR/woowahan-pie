@@ -20,6 +20,10 @@
 
 ---
 
+### ES
+
+**With package managers**
+
 ```zsh
 > npm install woowahan-pie
 ```
@@ -30,15 +34,40 @@ or
 > yarn add woowahan-pie
 ```
 
-> UMD module will be shipped in the next major version
+then
+
+```js
+import { Pie } from 'woowahan-pie'
+```
+
+**With browser ES module**
+
+```js
+<script src="script.js" type="module"></script>
+```
+
+```js
+import { Pie } from 'https://unpkg.com/woowahan-pie@latest/lib/index.js'
+```
+
+### UMD
+
+```html
+<script
+  src="https://unpkg.com/woowahan-pie@latest/lib/index.min.js"
+  crossorigin
+></script>
+```
+
+```js
+const Pie = woowahanPie.Pie
+```
 
 ---
 
 ### Usage (example above)
 
 ```js
-import { Pie } from 'woowahan-pie'
-
 const pie = Pie({
   target: '.pie-container',
   segments: [
@@ -109,7 +138,7 @@ An array of pie segments defined by some segment options.
 ## To Do
 
 - [x] Custom size
-- [ ] UMD module
+- [x] UMD module
 - [ ] Display legend on hover (add an option)
 
 ## License
