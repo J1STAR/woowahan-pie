@@ -137,9 +137,16 @@ An array of pie segments defined by some segment options.
 
 ## To Do
 
-- [x] Custom size
+### Common
+
 - [x] UMD module
+
+### Pie Chart
+
+- [x] Custom size
 - [ ] Display legend on hover (add an option)
+
+### (WIP) Line Chart
 
 ## License
 
