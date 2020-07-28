@@ -7,6 +7,7 @@
   "esmodule": "lib/index.js",
   "umd:main": "lib/index.min.js",
   "types": "lib/index.d.ts",
+  "repository": "https://github.com/woowa-techcamp-2020/woowahan-pie",
   "scripts": {
     "clear": "rimraf lib/*",
     "clear:test": "rimraf test/lib/*",
